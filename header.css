@@ -1,0 +1,88 @@
+header {
+    background: lightblue; 
+    flex: none; 
+    color: white;
+    text-shadow: 1px 1px lightblue;
+}
+
+.upperNav {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+.upperNav a {
+    text-decoration: none;
+    color: orange;
+    text-shadow: 2px 2px black;
+    align-items: center;
+}
+.upperNav form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0px 30px;
+}
+.upperNav form input {
+    flex: 1;
+    padding: 5px 0;
+}
+.upperNav ul {
+    display: flex;
+    /* border-left: solid;
+    border-color: black; */
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.upperNav ul i {
+    font-size: 3rem;
+    text-decoration: none;
+    color: lightblue;
+    text-shadow: 2px 2px black;
+    padding: 5px;
+}
+.upperNav ul i:hover {
+    color: orange;
+}
+
+.lowerNav {
+    background: lightblue;
+    padding: 5px 300px;
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    border-color: black;
+    border-width: .025px;
+}
+.lowerNav a {
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.lowerNav a:hover{
+    color:orange;
+}
+
+@media (max-width: 768px) {
+    .upperNav-full-width {
+      display: none;
+    }
+  
+    .upperNav-short-width {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .upperNav-full-width {
+      display: flex;
+    }
+  
+    .upperNav-short-width {
+      display: none;
+    }
+}
